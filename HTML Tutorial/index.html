@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <section>
         <nav>
-            <img src="./HTML Practise Assets/FES.svg" alt="">
+            <img src="./HTML Practise Assets/FES.svg" class="logo" alt="">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#discord">Discord</a></li>
@@ -18,9 +19,10 @@
             </ul>
         </nav>
         <header>
+            <div class="row">
             <div>
                 <h1>Best place to learn frontend</h1>
-                <p>Go from being an absolute beginner to pro with a simplified process</p>
+                <p class="subheader">Go from being an absolute beginner to pro with a simplified process</p>
                 <button>Start now</button>
             </div>
             <figure>
@@ -31,23 +33,34 @@
 <main>
     <section id="about">
 <h2>About</h2>
-<div>
-    <p>Learn frontend development with our comprehensive course designed for beginners and experienced developers alike.</p>
-    <p>Learn frontend development with our comprehensive course designed for beginners and experienced developers alike.</p>
+<div class="row">
+
+<div class="section__description">
+    <div class="section__description--wrapper">
+    <p class="section__description--para">Learn frontend development with our comprehensive course designed for beginners and experienced developers alike.</p>
+    <p class="section__description--para">Learn frontend development with our comprehensive course designed for beginners and experienced developers alike.</p>
 </div>
-<figure>
+<figure class="about__img--wrapper">
     <img src="./HTML Practise Assets/about.jpg" alt="">
 </figure>
+</div>
+</div>
     </section>
 
     <section id="discord">
 <h2>Discord</h2>
-<figure>
+<div class="row">
+
+<div class="section__description">
+
+<figure class="discord__img--wrapper">
     <img src="./HTML Practise Assets/discord.jpg" alt="Discord">
 </figure>
-<div>
-    <p>Join our vibrant Discord community to connect with fellow learners, get help, and share your progress.</p>
-    <p>Join our vibrant Discord community to connect with fellow learners, get help, and share your progress.</p>
+<div class="section__description--wrapper">
+    <p class="section__description--para">Join our vibrant Discord community to connect with fellow learners, get help, and share your progress.</p>
+    <p class="section__description--para">Join our vibrant Discord community to connect with fellow learners, get help, and share your progress.</p>
+</div>
+</div>
 </div>
     </section>
 
@@ -55,19 +68,20 @@
 <h2>Contact</h2>
 <form action="">
     <span>Email</span>
-    <input type="text" placeholder="jane@example.com">
+    <input type="email" placeholder="jane@example.com">
     <span>Email</span>
-    <textarea type="text" placeholder="jane@example.com"></textarea>
+    <textarea type="text" placeholder="Cool website lets get connected!"></textarea>
+    <button>Contact Us!</button>
 </form>
     </section>
 </main>
 <footer>
-    <img src="./HTML Practise Assets/FES.svg" alt="">
-<div>
-    <a href="#about">About</a>
-    <a href="#discord">Discord</a>
-    <a href="#contact">Contact</a>
-    <a href="">Courses</a>
+    <img class="footer__logo" src="./HTML Practise Assets/FES.svg" alt="">
+<div class="footer__links">
+    <a class="footer__links"href="#about">About</a>
+    <a class="footer__links"href="#discord">Discord</a>
+    <a class="footer__links"href="#contact">Contact</a>
+    <a class="footer__links"href="">Courses</a>
 </div>
 <p>© 2025 Frontend Simplified. All rights reserved.</p>
 </footer>
